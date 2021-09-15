@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+models/*.h5 filter=lfs diff=lfs merge=lfs -text
+models/serial.h5 filter=lfs diff=lfs merge=lfs -text
