@@ -1,7 +1,17 @@
 from utils import *
 
 model_selection = ['Basic 10 CNN layer Serial Model', 'Fine tuned VGG16 Model', 'Mobilenet Model', 'Densenet Model', 'Ensemble Model','Show all']
-    
+
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("background.jpeg")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 st.write("""
          # Test Deepfake
          """
