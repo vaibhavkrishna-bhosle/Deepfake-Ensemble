@@ -1,6 +1,6 @@
 from utils import *
 
-model_selection = ['Basic 10 CNN layer Serial Model', 'Fine tuned VGG16 Model', 'Mobilenet Model', 'Densenet Model', 'Ensemble Model','Show all']
+model_selection = ['Basic 10 CNN layer Serial Model', 'Fine tuned VGG16 Model', 'Densenet Model', 'Ensemble Model','Show all']
 
 st.markdown(
     """
@@ -33,7 +33,6 @@ else:
     out_string_e = cal_ensemble(serial,vgg16,densenet,"Ensemble   ")
     out_string_serial = generate_string(serial,"Serial     ")
     out_string_vgg16 = generate_string(vgg16,"VGG16      ")
-    out_string_mobilenet = generate_string(mobilenet,"Mobilenet  ")
     out_string_densenet = generate_string(densenet,"Densenet   ")
 
 
@@ -42,15 +41,12 @@ else:
     elif selection == model_selection[1]:
         st.write(out_string_vgg16)
     elif  selection == model_selection[2]:
-        st.write(out_string_mobilenet)
+        st.write(out_string_densenet)z
     elif  selection == model_selection[3]:
-        st.write(out_string_densenet)
-    elif  selection == model_selection[4]:
         st.write(out_string_e)
-    elif selection == model_selection[5]:
+    elif selection == model_selection[4]:
         st.write(out_string_serial)
         st.write(out_string_vgg16)
-        st.write(out_string_mobilenet)
         st.write(out_string_densenet)
         st.write(out_string_e)
 
